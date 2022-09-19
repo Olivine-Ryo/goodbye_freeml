@@ -11,9 +11,9 @@ from pathlib import Path
 
 mail= input('Input your ID >>>')
 password= input('Input your Pass >>>')
-group_name = "pso-all"
+group_name = "" #グループ名を指定
 page_max = 32
-dldir_name = 'philomusica2'  # 保存先フォルダ名
+dldir_name = 'archive_data'  # 保存先フォルダ名
 dldir_path = Path(dldir_name)
 dldir_path.mkdir(exist_ok=True)  # 存在していてもOKとする（エラーで止めない）
 download_dir = str(dldir_path.resolve())  # 絶対パス
